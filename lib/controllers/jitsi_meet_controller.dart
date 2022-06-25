@@ -15,9 +15,9 @@ class JitsiMeetController {
           .MD_RESOLUTION; // Limit video resolution to 360p
 
       var options = JitsiMeetingOptions(room: roomName)
-        ..userDisplayName = _authController.user!.displayName
-        ..userEmail = _authController.user!.email
-        ..userAvatarURL = _authController.user!.photoURL
+        ..userDisplayName = _authController.user.displayName
+        ..userEmail = _authController.user.email
+        ..userAvatarURL = _authController.user.photoURL
         ..audioMuted = isAudioMuted
         ..videoMuted = isVideoMuted;
 
